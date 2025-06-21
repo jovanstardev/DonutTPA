@@ -1,0 +1,58 @@
+name: DonutTPA
+main: com.jovanstar.donuttpa.main
+version: 1.0.0
+api-version: 1.16
+author: JovanStar
+commands:
+  tpa:
+    description: Send a TPA request to another player.
+    usage: /tpa <player>
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpa.
+  tpahere:
+    description: Send a TPAHERE request to another player.
+    usage: /tpahere <player>
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpahere.
+  tpaccept:
+    description: Accept a pending TPA or TPAHERE request.
+    usage: /tpaccept <player>
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpaccept.
+  tpacancel:
+    description: Deny a pending TPA or TPAHERE request.
+    usage: /tpacancel <player>
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpacancel.
+  tpatoggle:
+    description: Toggle incoming TPA requests on/off.
+    usage: /tpatoggle
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpatoggle.
+  tpaheretoggle:
+    description: Toggle incoming TPAHERE requests on/off.
+    usage: /tpaheretoggle
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpaheretoggle.
+  tpaheretoggle:
+    description: Toggle incoming TPAHERE requests on/off.
+    usage: /tpaheretoggle
+    permission: donuttpa.use
+    permission-message: You don’t have permission to use /tpaheretoggle.
+  tpauto:
+    description: Toggle auto-accept of teleport requests
+    usage: /tpauto
+    permission: donuttpa.use
+    aliases: [tpaauto]
+  tpareload:
+    description: Reload all plugin configuration.
+    usage: /donuttpa reload
+    permission: donuttpa.reload
+    aliases: [donuttpareload]
+permissions:
+   donuttpa.use:
+     description: Allows using DonutTPA commands
+     default: true
+   donuttpa.reload:
+     description: Reload the DonutTPA configs
+     default: op
